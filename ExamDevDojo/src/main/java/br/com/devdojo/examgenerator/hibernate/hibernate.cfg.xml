@@ -1,0 +1,47 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE hibernate-configuration PUBLIC-->
+		<!--"-//Hibernate/Hibernate Configuration DTD 3.0//EN"-->
+		<!--"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!--<hibernate-configuration>-->
+	<!--<session-factory name="mSessionFactory">-->
+
+		<!--<property name="hibernate.connection.username">root</property>-->
+		<!--<property name="hibernate.connection.password"></property>-->
+		<!--&lt;!&ndash;Change database name &ndash;&gt;-->
+		<!--<property name="hibernate.connection.url">jdbc:mysql://localhost/fj28</property>-->
+		<!--<property name="hibernate.connection.datasource">java:/comp/env/jdbc/datasource</property>-->
+		<!--<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>-->
+		<!--<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+		<!--<property name="hibernate.current_session_context_class">thread</property>-->
+		<!--<property name="hibernate.transaction.coordinator_class">org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl</property>-->
+		<!--<property name="hibernate.jdbc.factory_class">org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch</property>-->
+		<!--<property name="hibernate.jdbc.batch_size">100</property>-->
+		<!--<property name="hibernate.cache.use_second_cache">true</property>-->
+		<!--<property name="hibernate.transaction.auto_close_session">true</property>-->
+		<!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+		<!--<property name="hibernate.show_sql">true</property>-->
+		<!--<property name="hibernate.format_sql">true</property>-->
+		<!--<property name="hibernate.generate_statistics">true</property>-->
+
+		<!--&lt;!&ndash; Verify if is correct classes &ndash;&gt;-->
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostInsertEventListenerImpl"-->
+			<!--type="post-insert" />-->
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostUpdateEventListenerImpl"-->
+			<!--type="post-update" />-->
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostDeleteEventListenerImpl"-->
+			<!--type="post-delete" />-->
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostCollectionRecreateEventListenerImpl"-->
+			<!--type="post-collection-recreate" />-->
+
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostCollectionUpdateEventListenerImpl"-->
+			<!--type="post-collection-update" />-->
+		<!--<listener-->
+			<!--class="org.hibernate.envers.event.spi.EnversPostDeleteEventListenerImpl"-->
+			<!--type="post-collection-remove" />-->
+	<!--</session-factory>-->
+<!--</hibernate-configuration>-->
